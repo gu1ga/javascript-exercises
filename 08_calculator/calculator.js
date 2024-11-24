@@ -1,25 +1,54 @@
-const add = function() {
+const add = function(number1, number2) {
+	return number1 + number2	
+};
+
+const subtract = function(number1, number2) {
+	return number1 - number2	
+};
+
+const sum = function(numberArray) {
+	let sum = 0
+
+	for (number of numberArray){
+		sum += number
+	}
+
+	return sum
 	
 };
 
-const subtract = function() {
-	
+const multiply = function(numberArray) {
+	let multiplication = 1
+
+	for (number of numberArray){
+		multiplication = multiplication*number 
+	}
+
+	return multiplication
 };
 
-const sum = function() {
-	
+const power = function(number, power) {
+	let result = 1
+	let step = 1
+
+	while(step <= power){
+		result = result*number
+		step++
+	}
+	return result
 };
 
-const multiply = function() {
-
-};
-
-const power = function() {
+const factorial = function(number) {
 	
-};
+	if (number < 0){
+		return 'ERROR'
+	}
 
-const factorial = function() {
-	
+	else if (number <= 1){
+		return 1
+	}else{
+		return number * factorial(number - 1)
+	}
 };
 
 // Do not edit below this line
